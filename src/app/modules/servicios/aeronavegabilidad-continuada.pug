@@ -1,0 +1,66 @@
+//- index.pug
+extends ../../layouts/layout
+
+block html_title
+    | Aerolineas Argentinas - Aeronavegabilidad Continua
+
+block content
+
+    +section__header
+
+    section.services__above-the-fold
+        img(src="/assets/images/aeronavegabilidadContinuadaHead.jpg", alt="Aeronavegabilidad Continua Aerolineas Argentinas")
+        
+    section.services__title
+        .container-lg
+            .row
+                .col-12
+                    p Servicios
+
+    section.services__nav--first.d-flex.d-lg-none
+        .container-fluid
+            .row
+                .col-12
+                    a(href="/app/servicios/componentes.html", target="_self", rel="noopener noreferrer" title="Componentes")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(0,33,87,1)")
+                    h1 Aeronavegabilidad Continua
+                    a(href="/app/servicios/aeronaves.html", target="_self", rel="noopener noreferrer" title="Aeronaves")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(0,33,87,1)")
+
+    section.container-lg.pt-4
+        .row
+            .col-12
+                div
+                    h2.d-none.d-lg-inline-flex Aeronavegabilidad Continua
+                    p.mb-3 Contamos con un equipo de mas de 
+                        b 150 profesionales de la ingeniería 
+                        | dedicados a la gestión de mantenimiento de la aeronavegabilidad en multiples flotas de fuselaje angosto y ancho.
+
+    section.container-lg
+        .row
+            .col-12.col-lg-6
+                h3 Soluciones ofrecidas:
+                ul.services__list
+                    li Desarrollo y preparación de Programas de Mantenimiento
+                    li Planificación de corto y largo plazo para el desarrollo de inspecciones de mantenimiento mayor y menor
+                    li Ingeniería General y soporte de flota, incluyendo evaluación, documentación e Implementación de Directivas de Aeronavegabilidad y Boletines de Servicio.
+                    li Confección de Listas de Equipamiento Mínimo (MEL).
+                    li Control y Gestión de la Vida Útil de Componentes. Evaluación y Mapeo de daños.
+                    li Soporte de Gestión de Flota, en phase-in y phase-out, consultoría para la evaluación y negociación de las condiciones técnicas. Inspección física y evaluación de registros de aeronaves.
+            .col-12.col-lg-6.services__img
+                img(src="/assets/images/aeronavegabilidadContinuadaBody.jpg", alt="Aeronavegabilidad Continua Aerolineas Argentinas")
+
+    section.services__nav--last.d-none.d-lg-flex
+        .container
+            .row
+                .col-12
+                    nav.nav
+                        a.nav-link(href="/app/servicios/aeronaves.html", target="_self", rel="noopener noreferrer", title="Aeronaves") Aeronaves
+                        a.nav-link(href="/app/servicios/motores.html", target="_self", rel="noopener noreferrer", title="Motores") Motores
+                        a.nav-link(href="/app/servicios/capacitacion-tecnica.html", target="_self", rel="noopener noreferrer", title="Capacitación Técnica") Capacitación Técnica
+                        a.nav-link(href="/app/servicios/componentes.html", target="_self", rel="noopener noreferrer", title="Componentes") Componentes
+                        a.nav-link.active(aria-current="page", href="/app/servicios/aeronavegabilidad-continuada.html", target="_self", rel="noopener noreferrer", title="Aeronavegabilidad Continuada") Aeronavegabilidad Continuada
+
+    +section__footer

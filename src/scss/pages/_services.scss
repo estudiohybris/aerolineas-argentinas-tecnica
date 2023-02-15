@@ -1,0 +1,108 @@
+@import "../abstracts/abstracts-module";
+
+.services__above-the-fold {
+    aspect-ratio: 21 / 5;
+    background-color: $gray-100;
+    border-bottom: $spacer solid $secondary;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    .services__above-the-fold {
+        aspect-ratio: 16 / 9;
+        border-top: $spacer * .5 solid $primary;
+        border-bottom: none;
+    }
+}
+
+
+.services__title {
+    background-color: $secondary;
+    p {
+        color: $white;
+        font-size: $font-size-base * 1.5;
+        font-weight: $font-weight-semibold;
+        line-height: $line-height-sm;
+        margin: $spacer * .5 0;
+    }
+}
+
+.services__nav--first {
+    background-color: $gray-50;
+    & .col-12 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacer;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    .services__title,
+    .services__navigation {
+        display: none;
+    }
+}
+
+.services__img {
+    margin-bottom: $spacer * 5;
+    & img {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .services__img {
+        & img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+}
+
+ul.services__list {
+    margin-bottom: $spacer * 2;
+    li {
+        margin-bottom: $spacer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.services__nav--last {
+    background-color: $gray-50;
+    .nav {
+        width: 100%;
+        margin: $spacer 0;
+        display: flex;
+        justify-content: space-between;
+        .nav-link {
+            color: $gray-500;
+            padding: $spacer 0;
+            &.active {
+                color: $primary;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: $spacer * 0.25;
+                    background-color: $secondary;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+mixin section__header
+    header.sticky-top
+        nav.navbar
+            .container-lg
+                a.navbar-brand(href="/app/home/index.html")
+                    img.img-fluid(src="/assets/images/AR_Tecnica-color.png", alt="Aerolineas Argentinas Técnica", style="width: auto; height: 40px;")
+                .dropdown
+                    a.text-primary.dropdown-toggle(href="#", role="button", id="dropdownMenuLink", data-bs-toggle="dropdown", aria-expanded="false")
+                        svg.me-11(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z", fill="rgba(0,33,87,1)")
+                        | Español
+                    ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownMenuLink")
+                        li
+                            a.dropdown-item.active(href="#") Español
+                            a.dropdown-item(href="#") English
+                button.d-flex.d-lg-none.navbar-toggler.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+                    svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24", width="32", height="32")
+                        path(d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z",fill="rgba(0,33,87,1)")
+                .collapse.navbar-collapse(id="navbarNav")
+                    ul.navbar-nav(id="menu")
+                        li.nav-item(data-menuanchor="section1")
+                            a.nav-link(href="#section1", target="_self", rel="noopener noreferrer", title="¿Quiénes somos?") ¿Quiénes somos?
+                        li.nav-item(data-menuanchor="section2")
+                            a.nav-link(href="#section2", target="_self", rel="noopener noreferrer", title="Servicios") Servicios
+                        li.nav-item(data-menuanchor="section3")
+                            a.nav-link(href="#section3", target="_self", rel="noopener noreferrer", title="Certificaciones") Certificaciones
+                        li.nav-item(data-menuanchor="section4")
+                            a.nav-link(href="#section4", target="_self", rel="noopener noreferrer", title="Contacto") Contacto
+        .header__nav
+            .container
+                .row
+                    .col-12
+                        ul.nav(id="menu")
+                            li.nav-link(data-menuanchor="section1")
+                                a(href="#section1", target="_self", rel="noopener noreferrer", title="¿Quiénes somos?") ¿Quiénes somos?
+                            li.nav-link(data-menuanchor="section2")
+                                a(href="#section2", target="_self", rel="noopener noreferrer", title="Servicios") Servicios
+                            li.nav-link(data-menuanchor="section3")
+                                a(href="#section3", target="_self", rel="noopener noreferrer", title="Certificaciones") Certificaciones
+                            li.nav-link(data-menuanchor="section4")
+                                a(href="#section4", target="_self", rel="noopener noreferrer", title="Contacto") Contacto

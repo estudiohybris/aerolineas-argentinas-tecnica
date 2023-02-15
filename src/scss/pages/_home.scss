@@ -1,0 +1,135 @@
+@import "../abstracts/abstracts-module";
+
+.fp-viewing-section1,
+.fp-viewing-section2,
+.fp-viewing-section3 {
+    & #fp-nav ul li a span,
+    & .fp-slidesNav ul li a span {
+        background: $secondary !important;
+    }
+    & #fp-nav ul li .fp-tooltip {
+        color: $secondary;
+    }
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1, p {
+        text-align: right;
+    }
+    hr {
+        border-color: $primary;
+        border-width: $spacer * .5;
+        margin-bottom: $spacer * 3;
+    }
+}
+
+#slide1 {
+    background-image: url("/assets/images/homeHead1.jpg");
+    h1, p {
+        color: $white;
+    }
+}
+
+#slide2 {
+    background-image: url("/assets/images/homeHead2.jpg");
+}
+
+
+@include media-breakpoint-down(lg) {
+    .slide {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        h1, p {
+            color: $white;
+            text-align: left;
+        }
+        h1, img {
+            margin-top: calc(40vh - 82px);
+        }
+        hr {
+            border-color: $secondary;
+        }
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 991px)
+  and (orientation: landscape) {
+    .slide {
+        background-image: none !important;
+    }
+}
+
+.home__services__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+        display: flex;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+    h4 {
+        position: absolute;
+        color: $white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: $spacer * 2;
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .home__services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.home__certifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+        background-color: $secondary;
+        color: $white;
+        text-align: center;
+        width: 100%;
+        padding: $spacer * .5;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        display: flex;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+    hr {
+        border-color: #707070;
+        width: 100%;
+        margin: 0 0 $spacer 0;
+        opacity: 1;
+    }
+    p {
+        color: #898A8D;
+        text-align: center;
+        margin: 0;
+    }
+}

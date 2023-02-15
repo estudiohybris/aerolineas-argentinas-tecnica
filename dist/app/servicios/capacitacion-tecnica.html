@@ -1,0 +1,232 @@
+<!-- https://github.com/pugjs/pug/issues/631-->
+<!-- https://codepen.io/14islands/pen/QqXYrb?editors=1010-->
+<!-- https://codepen.io/DimWeb/pen/LzjbeO-->
+<!-- initialization-->
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Aerolineas Argentinas - Capacitación Técnica
+        </title>
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="mask-icon" href="/assets/images/favicons/favicon.svg" color="#ffffff">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-icon-192x192.png">
+        <link rel="apple-touch-startup-image" href="/assets/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#0075C9">
+        <meta name="msapplication-TileImage" content="/assets/images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#0075C9">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="description" content="Volá por Argentina con la mejor financiación">
+        <meta name="keywords" content="aerolineas, técnica">
+        <meta name="author" content="Estudio Hybris, nataliagiannantonio@gmail.com">
+        <meta name="copyright" content="Aerolíneas Argentinas | Técnica">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="url" content="https://www.aerolineas.com.ar/">
+        <meta name="geo.placename" content="Buenos Aires">
+        <meta name="geo.region" content="AR">
+        <link rel="canonical" href="https://www.aerolineas.com.ar/">
+        <link rel="shortlink" href="https://www.aerolineas.com.ar/">
+        <meta property="og:title" content="Aerolíneas Argentinas | Técnica">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.aerolineas.com.ar/">
+        <meta property="og:image" content="/assets/images/shared.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="800">
+        <meta property="og:image:healtight" content="Aerolíneas Argentinas | Técnica">
+        <meta property="og:description" content="Volá por Argentina con la mejor financiación">
+        <meta property="og:determiner" content="the">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:site_name" content="Aerolíneas Argentinas | Técnica">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&amp;display=swap" rel="stylesheet">
+        <link href="../../scss/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="sticky-top">
+            <nav class="navbar">
+                <div class="container-lg"><a class="navbar-brand" href="/app/home/index.html"><img class="img-fluid" src="/assets/images/AR_Tecnica-color.png" alt="Aerolineas Argentinas Técnica" style="width: auto; height: 40px;" /></a>
+                    <div class="dropdown"><a class="text-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg class="me-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z" fill="rgba(0,33,87,1)"></path>
+                            </svg>Español</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item active" href="#">Español</a><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="d-flex d-lg-none navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(0,33,87,1)"></path>
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="menu">
+                            <li class="nav-item" data-menuanchor="section1"><a class="nav-link" href="#section1" target="_self" rel="noopener noreferrer" title="¿Quiénes somos?">¿Quiénes somos?</a></li>
+                            <li class="nav-item" data-menuanchor="section2"><a class="nav-link" href="#section2" target="_self" rel="noopener noreferrer" title="Servicios">Servicios</a></li>
+                            <li class="nav-item" data-menuanchor="section3"><a class="nav-link" href="#section3" target="_self" rel="noopener noreferrer" title="Certificaciones">Certificaciones</a></li>
+                            <li class="nav-item" data-menuanchor="section4"><a class="nav-link" href="#section4" target="_self" rel="noopener noreferrer" title="Contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav" id="menu">
+                                <li class="nav-link" data-menuanchor="section1"><a href="#section1" target="_self" rel="noopener noreferrer" title="¿Quiénes somos?">¿Quiénes somos?</a></li>
+                                <li class="nav-link" data-menuanchor="section2"><a href="#section2" target="_self" rel="noopener noreferrer" title="Servicios">Servicios</a></li>
+                                <li class="nav-link" data-menuanchor="section3"><a href="#section3" target="_self" rel="noopener noreferrer" title="Certificaciones">Certificaciones</a></li>
+                                <li class="nav-link" data-menuanchor="section4"><a href="#section4" target="_self" rel="noopener noreferrer" title="Contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="services__above-the-fold"><img src="/assets/images/capacitacionTecnicaHead.jpg" alt="Capacitación Técnica Aerolineas Argentinas"></section>
+        <section class="services__title">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Servicios</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services__nav--first d-flex d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center"><a href="/app/servicios/motores.html" target="_self" rel="noopener noreferrer" title="Motores">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(0,33,87,1)"></path>
+                            </svg></a>
+                        <h1>Capacitación Técnica</h1><a href="/app/servicios/componentes.html" target="_self" rel="noopener noreferrer" title="Componentes">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(0,33,87,1)"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-lg pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h2 class="d-none d-lg-inline-flex">Capacitación Técnica</h2>
+                        <p class="mb-3">Contamos con un <b>centro de formación e instrucción técnica certificado por RAAC Parte 147, </b>con extensas capacidades de entrenamiento: <b>7 aulas computarizadas, 4 simuladores hidráulicos y 3 estáticos, auditorio con capacidad para +120 personas </b>y un destacado equipo docente conformado por <b>instructores certificados ante los principales organismos regulatorios nacionales e internacionales, </b>como así también reconocidos OEMs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-lg">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3>Entrenamiento Técnico:</h3>
+                    <ul class="services__list">
+                        <li>Teórico, práctico y Formación en el Trabajo (OJT)</li>
+                    </ul>
+                    <h3>Programas de formación Niveles 1 a 5 bajo lineamiento ATA 104:</h3>
+                    <ul class="services__list">
+                        <li>Boeing B737 NG/ MAX/ CLASSIC/ serie 200</li>
+                        <li>Airbus A330 Family</li>
+                        <li>Embraer E190</li>
+                    </ul>
+                    <h3>Entrenamiento Especializado:</h3>
+                    <ul class="services__list">
+                        <li>Puesta en marcha de motores </li>
+                        <li>Mantenimiento motores (CFM56-7B/ LEAP-1B/ GE CF6/ CF34)</li>
+                        <li>Entrenamiento en NDT y boroscopía</li>
+                        <li>Operación en tiempo frío</li>
+                        <li>ETOPS</li>
+                        <li>Transición de Aeronaves</li>
+                        <li>Radioperador restringido (ORR)</li>
+                        <li>APU</li>
+                        <li>Trenes de aterrizaje</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6 services__img"><img class="mb-2" src="/assets/images/capacitacionTecnicaBody1.jpg" alt="Capacitación Técnica Aerolineas Argentinas">
+                    <div class="d-flex flex-row"><img class="me-1" src="/assets/images/capacitacionTecnicaBody2.jpg" alt="Capacitación Técnica Aerolineas Argentinas"><img class="ms-1" src="/assets/images/capacitacionTecnicaBody3.jpg" alt="Capacitación Técnica Aerolineas Argentinas"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services__nav--last d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="nav"><a class="nav-link" href="/app/servicios/aeronaves.html" target="_self" rel="noopener noreferrer" title="Aeronaves">Aeronaves</a><a class="nav-link" href="/app/servicios/motores.html" target="_self" rel="noopener noreferrer" title="Motores">Motores</a><a class="nav-link active" aria-current="page" href="/app/servicios/capacitacion-tecnica.html" target="_self" rel="noopener noreferrer" title="Capacitación Técnica">Capacitación Técnica</a><a class="nav-link" href="/app/servicios/componentes.html" target="_self" rel="noopener noreferrer" title="Componentes">Componentes</a><a class="nav-link" href="/app/servicios/aeronavegabilidad-continuada.html" target="_self" rel="noopener noreferrer" title="Aeronavegabilidad Continuada">Aeronavegabilidad Continuada</a></nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section" data-anchor="section4">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center"><a href="https://www.instagram.com/" target="_blank" title="Ir a Instagram">
+                            <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1091_4211)">
+                                    <path d="M11.334 1.33325H4.667C2.82596 1.33325 1.3335 2.82571 1.3335 4.66676V11.3338C1.3335 13.1748 2.82596 14.6673 4.667 14.6673H11.334C13.1751 14.6673 14.6675 13.1748 14.6675 11.3338V4.66676C14.6675 2.82571 13.1751 1.33325 11.334 1.33325Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.6671 7.58032C10.7493 8.13518 10.6546 8.70185 10.3962 9.19974C10.1379 9.69764 9.72912 10.1014 9.22808 10.3536C8.72704 10.6058 8.15924 10.6935 7.60544 10.6044C7.05163 10.5153 6.54003 10.2538 6.1434 9.85721C5.74676 9.46057 5.48529 8.94897 5.39618 8.39517C5.30706 7.84137 5.39484 7.27356 5.64703 6.77253C5.89922 6.27149 6.30297 5.86272 6.80086 5.60438C7.29875 5.34603 7.86543 5.25126 8.42029 5.33354C8.98626 5.41746 9.51024 5.6812 9.91483 6.08578C10.3194 6.49036 10.5831 7.01434 10.6671 7.58032Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.6672 4.33337H11.6739" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1091_4211">
+                                        <rect width="32" height="32" fill="white" transform="translate(0 -0.00012207)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg></a><a class="mx-2" href="https://www.youtube.com/" target="_blank" title="Ir a Youtube">
+                            <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.0291 4.28004C14.9499 3.96363 14.7886 3.67373 14.5615 3.4396C14.3344 3.20548 14.0495 3.03543 13.7357 2.94664C12.589 2.66663 8.00206 2.66663 8.00206 2.66663C8.00206 2.66663 3.41516 2.66663 2.26843 2.97331C1.95458 3.0621 1.66972 3.23215 1.44262 3.46627C1.21552 3.70039 1.05423 3.9903 0.975032 4.30671C0.765165 5.47047 0.662507 6.65104 0.66835 7.83356C0.660869 9.02498 0.763533 10.2145 0.975032 11.3871C1.06234 11.6937 1.22725 11.9725 1.45382 12.1968C1.68039 12.421 1.96096 12.583 2.26843 12.6671C3.41516 12.9738 8.00206 12.9738 8.00206 12.9738C8.00206 12.9738 12.589 12.9738 13.7357 12.6671C14.0495 12.5783 14.3344 12.4083 14.5615 12.1742C14.7886 11.9401 14.9499 11.6501 15.0291 11.3337C15.2373 10.1787 15.34 9.00717 15.3358 7.83356C15.3432 6.64213 15.2406 5.45257 15.0291 4.28004V4.28004Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.50171 10.0137L10.3352 7.83355L6.50171 5.65344V10.0137Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></a><a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
+                            <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1091_4207)">
+                                    <path d="M12.0019 1.33325H10.0018C9.11772 1.33325 8.26983 1.68446 7.64468 2.30961C7.01952 2.93477 6.66832 3.78266 6.66832 4.66676V6.66686H4.66821V9.33366H6.66832V14.6673H9.33512V9.33366H11.3352L12.0019 6.66686H9.33512V4.66676C9.33512 4.48994 9.40536 4.32036 9.53039 4.19533C9.65542 4.0703 9.825 4.00006 10.0018 4.00006H12.0019V1.33325Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1091_4207">
+                                        <rect width="32" height="32" fill="white" transform="translate(0 -0.00012207)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg></a></div>
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="mt-3 mb-1">Contactanos</h3><a href="mailto:tecnica@aerolineas.com.ar" target="_blank" rel="noopener noreferrer" title="Enviar correo electrónico">tecnica@aerolineas.com.ar</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav py-3 my-4">
+                            <li class="nav-item"><a class="nav-link" href="#section1" target="_self" rel="noopener noreferrer" title="¿Quiénes somos?">¿QUIÉNES SOMOS?</a></li>
+                            <li class="nav-item mx-0 mx-lg-4 my-2 my-lg-0"><a class="nav-link" href="#section2" target="_self" rel="noopener noreferrer" title="Servicios">SERVICIOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#section3" target="_self" rel="noopener noreferrer" title="Certificaciones">CERTIFICACIONES</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center"><a href="/app/home/index.html"><img class="img-fluid" src="/assets/images/AR_Tecnica-white.png" alt="Aerolineas Argentinas Técnica" style="width: auto; height: 40px;" /></a></div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../../main.bundle.js"></script>
+    </body>
+
+</html>

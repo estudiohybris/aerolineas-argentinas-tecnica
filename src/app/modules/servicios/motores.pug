@@ -1,0 +1,73 @@
+//- index.pug
+extends ../../layouts/layout
+
+block html_title
+    | Aerolineas Argentinas - Motores
+
+block content
+
+    +section__header
+
+    section.services__above-the-fold
+        img(src="/assets/images/motoresHead.jpg", alt="Motores Aerolineas Argentinas")
+        
+    section.services__title
+        .container-lg
+            .row
+                .col-12
+                    p Servicios
+    
+    section.services__nav--first.d-flex.d-lg-none
+        .container-fluid
+            .row
+                .col-12.d-flex.justify-content-between.align-items-center
+                    a(href="/app/servicios/aeronaves.html", target="_self", rel="noopener noreferrer" title="Aeronaves")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(0,33,87,1)")
+                    h1 Motores
+                    a(href="/app/servicios/capacitacion-tecnica.html", target="_self", rel="noopener noreferrer" title="Capacitación Técnica")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(0,33,87,1)")
+
+
+    section.container-lg.pt-4
+        .row
+            .col-12
+                div
+                    h2.d-none.d-lg-inline-flex Motores
+                    p.mb-3
+                        b Nuestro taller 
+                        | dedicado de reparacion de motores, renovado integramente en 2015, 
+                        b ofrece 2300 m2 y 5 bahías disponibles para procesar y reparar 
+                        | unidades durante todo el año.
+
+    section.container-lg
+        .row
+            .col-12.col-lg-6
+                h3 Soluciones ofrecidas:
+                ul.services__list
+                    li Visita de Taller con intervención a nivel de restauración de performance e integral en módulos.
+                    li Visitas de Hospital con reemplazo/modificación de módulos y submódulos hasta nivel de pieza.
+                    li Inspección boroscópica con video y reporte de documentación
+                    li On Wing support
+                    li Reparaciones boro-blending
+                    li Lavado de compresor
+                    li Balanceo y reajuste de Fan
+                h3 Capacidades:
+                ul.services__list.mb-3
+                    li Motores: CFM56-7B, CF34-10E, CF6, PW1000
+            .col-12.col-lg-6.services__img
+                img(src="/assets/images/motoresBody.jpg", alt="Motores Aerolineas Argentinas")
+
+    section.services__nav--last.d-none.d-lg-flex
+        .container
+            .row
+                .col-12
+                    nav.nav
+                        a.nav-link(href="/app/servicios/aeronaves.html", target="_self", rel="noopener noreferrer", title="Aeronaves") Aeronaves
+                        a.nav-link.active(aria-current="page", href="/app/servicios/motores.html", target="_self", rel="noopener noreferrer", title="Motores") Motores
+                        a.nav-link(href="/app/servicios/capacitacion-tecnica.html", target="_self", rel="noopener noreferrer", title="Capacitación Técnica") Capacitación Técnica
+                        a.nav-link(href="/app/servicios/componentes.html", target="_self", rel="noopener noreferrer", title="Componentes") Componentes
+                        a.nav-link(href="/app/servicios/aeronavegabilidad-continuada.html", target="_self", rel="noopener noreferrer", title="Aeronavegabilidad Continuada") Aeronavegabilidad Continuada
+
+    +section__footer

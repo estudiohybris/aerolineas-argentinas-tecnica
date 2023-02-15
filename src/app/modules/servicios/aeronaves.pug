@@ -1,0 +1,75 @@
+//- index.pug
+extends ../../layouts/layout
+
+block html_title
+    | Aerolineas Argentinas - Aeronaves
+
+block content
+
+    +section__header
+
+    section.services__above-the-fold
+        img(src="/assets/images/aeronavesHead.png", alt="Aeronaves Aerolineas Argentinas")
+        
+    section.services__title
+        .container-lg
+            .row
+                .col-12
+                    p Servicios
+    
+    section.services__nav--first.d-flex.d-lg-none
+        .container-fluid
+            .row
+                .col-12.d-flex.justify-content-between.align-items-center
+                    a(href="/app/servicios/aeronavegabilidad-continuada.html", target="_self", rel="noopener noreferrer" title="Aeronavegabilidad Continuada")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z" fill="rgba(0,33,87,1)")
+                    h1 Aeronaves
+                    a(href="/app/servicios/motores.html", target="_self", rel="noopener noreferrer" title="Motores")
+                        svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="32", height="32")
+                            path(d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(0,33,87,1)")
+
+
+    section.container-lg.pt-4
+        .row
+            .col-12
+                div
+                    h2.d-none.d-lg-inline-flex Aeronaves
+                    p.mb-3
+                        b 8 Hangares con mas de 40.000 m2 
+                        | dedicados a servicios de mantenimiento, distribuidos en los principales aeropuertos de Buenos Aires, Argentina (4 en EZE y 3 en AEP). Nuestras facilidades permiten desarrollar mas de 
+                        b 12 líneas de mantenimiento simultáneo en fuselaje angosto y ancho
+                        | , entre ellos el moderno 
+                        b Hangar 5
+                        | , inaugurado en 2018. Este es uno de los mas grandes de Latinoamerica, con una superficie de 
+                        b mas de 12.000 m2, un espacio de almacenamiento de hasta 4 aeronaves de fuselaje angosto o 2 de fuselaje ancho, y tres puentes gruas con una capacidad de izaje de 5tn.
+
+    section.container-lg
+        .row
+            .col-12.col-lg-6
+                h3 Soluciones ofrecidas:
+                ul.mb-2
+                    li Mantenimiento de base (C Checks & D Checks)
+                    li Reparaciones estructurales de fuselaje y de compuestos
+                    li Incorporaciones de modificaciones mayores/menores (SB/STC), reconfiguraciones de cabina
+                    li Mantenimiento Menor y de Línea (A Checks, transito, Diaria y Semanal) en mas de 37 escalas en Argentina y 12 en el exterior
+                    li Disponibilidad y AOG Recovery 24/7/365
+                h3 Capacidades:
+                ul.mb-3
+                    li Fuselaje Ancho: A330
+                    li Fuselaje Angosto: B737 NG y MAX, E190
+            .col-12.col-lg-6.services__img
+                img(src="/assets/images/aeronavesBody.jpg", alt="Aeronaves Aerolineas Argentinas")
+
+    section.services__nav--last.d-none.d-lg-flex
+        .container
+            .row
+                .col-12
+                    nav.nav
+                        a.nav-link.active(aria-current="page", href="/app/servicios/aeronaves.html", target="_self", rel="noopener noreferrer", title="Aeronaves") Aeronaves
+                        a.nav-link(href="/app/servicios/motores.html", target="_self", rel="noopener noreferrer", title="Motores") Motores
+                        a.nav-link(href="/app/servicios/capacitacion-tecnica.html", target="_self", rel="noopener noreferrer", title="Capacitación Técnica") Capacitación Técnica
+                        a.nav-link(href="/app/servicios/componentes.html", target="_self", rel="noopener noreferrer", title="Componentes") Componentes
+                        a.nav-link(href="/app/servicios/aeronavegabilidad-continuada.html", target="_self", rel="noopener noreferrer", title="Aeronavegabilidad Continuada") Aeronavegabilidad Continuada
+
+    +section__footer
