@@ -17739,14 +17739,14 @@ footer ul.nav li.nav-item a.nav-link {
 }
 
 #slide1 {
-  background-image: url("/assets/images/homeHead1.jpg");
+  background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1.jpg");
 }
 #slide1 h1, #slide1 .h1, #slide1 p {
   color: #fff;
 }
 
 #slide2 {
-  background-image: url("/assets/images/homeHead2.jpg");
+  background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2.jpg");
 }
 
 @media (max-width: 991.98px) {
