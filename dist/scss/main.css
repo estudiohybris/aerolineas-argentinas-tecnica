@@ -17526,22 +17526,22 @@ html.fp-enabled,
 
 @font-face {
   font-family: "Regular";
-  src: url("/assets/fonts/Regular-Regular.otf");
+  src: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/fonts/Regular-Regular.otf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Regular";
-  src: url("/assets/fonts/Regular-Medium.otf");
+  src: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/fonts/Regular-Medium.otf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Regular";
-  src: url("/assets/fonts/Regular-Semibold.otf");
+  src: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/fonts/Regular-Semibold.otf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Regular";
-  src: url("/assets/fonts/Regular-Bold.otf");
+  src: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/fonts/Regular-Bold.otf");
   font-weight: 700;
 }
 html {
