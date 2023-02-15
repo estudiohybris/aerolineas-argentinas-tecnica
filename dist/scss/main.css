@@ -17156,6 +17156,10 @@ textarea.form-control-lg {
   margin-top: -56px;
 }
 
+.fp-watermark {
+  display: none;
+}
+
 html.fp-enabled,
 .fp-enabled body {
   margin: 0;

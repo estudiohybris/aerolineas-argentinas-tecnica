@@ -1,4 +1,4 @@
-mixin section__header
+mixin section__header__services
     header.sticky-top
         nav.navbar
             .container-lg
@@ -21,11 +21,11 @@ mixin section__header
                         li.nav-item(data-menuanchor="section1")
                             a.nav-link(href=`${hostname}/app/home/index.html#section1`, target="_self", rel="noopener noreferrer", title="¿Quiénes somos?") ¿Quiénes somos?
                         li.nav-item(data-menuanchor="section2")
-                            a.nav-link(href=`${hostname}/app/home/index.html#section2`, target="_self", rel="noopener noreferrer", title="Servicios") Servicios
+                            a.nav-link.active(href=`${hostname}/app/home/index.html#section2`, target="_self", rel="noopener noreferrer", title="Servicios") Servicios
                         li.nav-item(data-menuanchor="section3")
                             a.nav-link(href=`${hostname}/app/home/index.html#section3`, target="_self", rel="noopener noreferrer", title="Certificaciones") Certificaciones
                         li.nav-item(data-menuanchor="section4")
-                            a.nav-link(href=`${hostname}/app/home/index.html#section4`, target="_self", rel="noopener noreferrer", title="Contacto") Contacto
+                            a.nav-link(href="#section4", target="_self", rel="noopener noreferrer", title="Contacto") Contacto
         .header__nav
             .container
                 .row
@@ -33,9 +33,9 @@ mixin section__header
                         ul.nav(id="menu")
                             li.nav-link(data-menuanchor="section1")
                                 a(href=`${hostname}/app/home/index.html#section1`, target="_self", rel="noopener noreferrer", title="¿Quiénes somos?") ¿Quiénes somos?
-                            li.nav-link(data-menuanchor="section2")
+                            li.nav-link.active(data-menuanchor="section2")
                                 a(href=`${hostname}/app/home/index.html#section2`, target="_self", rel="noopener noreferrer", title="Servicios") Servicios
                             li.nav-link(data-menuanchor="section3")
                                 a(href=`${hostname}/app/home/index.html#section3`, target="_self", rel="noopener noreferrer", title="Certificaciones") Certificaciones
                             li.nav-link(data-menuanchor="section4")
-                                a(href=`${hostname}/app/home/index.html#section4`, target="_self", rel="noopener noreferrer", title="Contacto") Contacto
+                                a(href="#section4", target="_self", rel="noopener noreferrer", title="Contacto") Contacto
