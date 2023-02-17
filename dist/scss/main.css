@@ -17606,6 +17606,7 @@ strong {
   color: #0075C9 !important;
 }
 
+
 /* 4. Layout-related sections */
 header.sticky-top {
   background-color: #fff;
@@ -17868,9 +17869,13 @@ footer ul.nav li.nav-item a.nav-link {
   line-height: 1.25;
   margin: 0.5rem 0;
 }
-
 .services__nav--first {
   background-color: #F5F5F5;
+}
+@media (max-width: 991.98px) {
+  .services__nav--first h1 {
+    font-size: 1.25rem;
+  }
 }
 .services__nav--first .col-12 {
   display: flex;
