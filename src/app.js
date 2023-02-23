@@ -76,7 +76,7 @@ var fullPageInstance = new fullpage('#fullpage', {
     paddingTop: 80,
     paddingBottom: 80,
     responsiveWidth: 991,
-    responsiveHeight: 991,
+    responsiveHeight: 640,
     // responsiveSlides: true,
     parallax: false,
     dropEffect: false,

@@ -28141,7 +28141,7 @@ var fullPageInstance = new fullpage_js__WEBPACK_IMPORTED_MODULE_3___default.a('#
     paddingTop: 80,
     paddingBottom: 80,
     responsiveWidth: 991,
-    responsiveHeight: 991,
+    responsiveHeight: 640,
     // responsiveSlides: true,
     parallax: false,
     dropEffect: false,
