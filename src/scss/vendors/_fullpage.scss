@@ -84,18 +84,24 @@ html.fp-enabled,
     z-index: 4;
     top: 50%;
     cursor: pointer;
-    margin-top: -38px;
+    //margin-top: -38px;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
+@include media-breakpoint-down(lg) {
+    .fp-controlArrow {
+        top: 30%;
+    }
+}
+
 .fp-prev {
-    left: 15px;
+    left: 0;
 }
 
 .fp-next {
-    right: 15px;
+    right: 0;
 }
 
 .fp-arrow {

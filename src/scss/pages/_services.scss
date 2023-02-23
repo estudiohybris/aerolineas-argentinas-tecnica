@@ -42,6 +42,11 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    .services__nav--first h1 {
+        font-size: 1.25rem;
+    }
+}
 
 @include media-breakpoint-up(lg) {
     .services__title,

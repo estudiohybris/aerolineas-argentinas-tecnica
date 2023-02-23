@@ -17226,18 +17226,22 @@ html.fp-enabled,
   z-index: 4;
   top: 50%;
   cursor: pointer;
-  margin-top: -38px;
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
+@media (max-width: 991.98px) {
+  .fp-controlArrow {
+    top: 30%;
+  }
+}
 .fp-prev {
-  left: 15px;
+  left: 0;
 }
 
 .fp-next {
-  right: 15px;
+  right: 0;
 }
 
 .fp-arrow {
@@ -17606,7 +17610,6 @@ strong {
   color: #0075C9 !important;
 }
 
-
 /* 4. Layout-related sections */
 header.sticky-top {
   background-color: #fff;
@@ -17869,13 +17872,9 @@ footer ul.nav li.nav-item a.nav-link {
   line-height: 1.25;
   margin: 0.5rem 0;
 }
+
 .services__nav--first {
   background-color: #F5F5F5;
-}
-@media (max-width: 991.98px) {
-  .services__nav--first h1 {
-    font-size: 1.25rem;
-  }
 }
 .services__nav--first .col-12 {
   display: flex;
@@ -17884,6 +17883,11 @@ footer ul.nav li.nav-item a.nav-link {
   padding: 1rem;
 }
 
+@media (max-width: 991.98px) {
+  .services__nav--first h1, .services__nav--first .h1 {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 992px) {
   .services__title,
 .services__navigation {

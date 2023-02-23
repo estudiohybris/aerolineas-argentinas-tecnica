@@ -2,9 +2,9 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="/assets/images/favicons/ms-icon-70x70.png" />
-            <square150x150logo src="/assets/images/favicons/ms-icon-150x150.png" />
-            <square310x310logo src="/assets/images/favicons/ms-icon-310x310.png" />
+            <square70x70logo src="https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/favicons/ms-icon-70x70.png" />
+            <square150x150logo src="https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/favicons/ms-icon-150x150.png" />
+            <square310x310logo src="https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/favicons/ms-icon-310x310.png" />
             <TileColor>#0075C9</TileColor>
         </tile>
     </msapplication>

@@ -1,5 +1,3 @@
-console.log('Test');
-
 // --------------------
 // CSS
 // --------------------
@@ -77,8 +75,8 @@ var fullPageInstance = new fullpage('#fullpage', {
     sectionsColor: ['#0075C9', '#FFFFFF', '#FFFFFF', '#FFFFFF','#0075C9',],
     paddingTop: 80,
     paddingBottom: 80,
-    responsiveWidth: 0,
-    responsiveHeight: 0,
+    responsiveWidth: 991,
+    responsiveHeight: 991,
     // responsiveSlides: true,
     parallax: false,
     dropEffect: false,
