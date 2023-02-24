@@ -162,6 +162,7 @@ html.fp-enabled,
 #fp-nav ul,
 .fp-slidesNav ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -173,13 +174,8 @@ html.fp-enabled,
     display: block;
     width: 1rem;
     height: 1rem;
-    margin: 0;
+    margin: .25rem;
     position: relative;
-}
-
-.fp-slidesNav ul li {
-    display: inline-block;
-    margin: 0.25rem;
 }
 
 #fp-nav ul li a,

@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+@include media-breakpoint-down(lg) {
+    #fp-nav ul,
+    .fp-slidesNav ul {
+        flex-direction: row !important;
+    }
+}
+
 .fp-viewing-section1,
 .fp-viewing-section2,
 .fp-viewing-section3 {
@@ -62,7 +69,7 @@
     }
     #slide1, #slide2 {
         object-fit: cover;
-        background-size: auto calc(50vh - 82px);
+        background-size: 100% calc(50vh - 114px);
     }
 }
 

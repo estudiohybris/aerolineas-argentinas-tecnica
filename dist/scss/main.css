@@ -17302,6 +17302,7 @@ html.fp-enabled,
 #fp-nav ul,
 .fp-slidesNav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -17313,13 +17314,8 @@ html.fp-enabled,
   display: block;
   width: 1rem;
   height: 1rem;
-  margin: 0;
-  position: relative;
-}
-
-.fp-slidesNav ul li {
-  display: inline-block;
   margin: 0.25rem;
+  position: relative;
 }
 
 #fp-nav ul li a,
@@ -17721,6 +17717,12 @@ footer ul.nav li.nav-item a.nav-link {
   padding: 0;
 }
 
+@media (max-width: 991.98px) {
+  #fp-nav ul,
+.fp-slidesNav ul {
+    flex-direction: row !important;
+  }
+}
 .fp-viewing-section1 #fp-nav ul li a span, .fp-viewing-section1 .fp-slidesNav ul li a span,
 .fp-viewing-section2 #fp-nav ul li a span,
 .fp-viewing-section2 .fp-slidesNav ul li a span,
@@ -17777,7 +17779,7 @@ footer ul.nav li.nav-item a.nav-link {
   }
   #slide1, #slide2 {
     object-fit: cover;
-    background-size: auto calc(50vh - 82px);
+    background-size: 100% calc(50vh - 114px);
   }
 }
 /* Landscape */
