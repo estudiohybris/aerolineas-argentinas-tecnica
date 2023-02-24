@@ -1,5 +1,11 @@
 @import "../abstracts/abstracts-module";
 
+#fullpage .fp-section[data-anchor="section0"] {
+    min-height: calc(100vh - 82px) !important;
+    height: calc(100vh - 82px) !important;
+    padding: 0;
+}
+
 .fp-viewing-section1,
 .fp-viewing-section2,
 .fp-viewing-section3 {
@@ -48,11 +54,15 @@
             text-align: left;
         }
         h1, img {
-            margin-top: calc(40vh - 82px);
+            margin-top: $spacer * 8;
         }
         hr {
             border-color: $secondary;
         }
+    }
+    #slide1, #slide2 {
+        object-fit: cover;
+        background-size: auto calc(50vh - 82px);
     }
 }
 

@@ -32,7 +32,7 @@ var fullPageInstance = new fullpage('#fullpage', {
     navigationPosition: 'right',
     navigationTooltips: ['Inicio', '¿Quienes somos?', 'Servicios', 'Certificaciones', 'Contacto'],
     showActiveTooltip: true,
-    slidesNavigation: false,
+    slidesNavigation: true,
     slidesNavPosition: 'bottom',
     //Scrolling
     css3: true,
@@ -77,7 +77,7 @@ var fullPageInstance = new fullpage('#fullpage', {
     paddingBottom: 80,
     responsiveWidth: 991,
     responsiveHeight: 640,
-    // responsiveSlides: true,
+    //responsiveSlides: true,
     parallax: false,
     dropEffect: false,
     waterEffect: false,

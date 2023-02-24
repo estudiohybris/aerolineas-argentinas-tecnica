@@ -17152,10 +17152,6 @@ textarea.form-control-lg {
  *
  * Copyright (C) 2021 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
-.fullpage-wrapper {
-  margin-top: -56px;
-}
-
 .fp-watermark {
   display: none;
 }
@@ -17233,7 +17229,7 @@ html.fp-enabled,
 
 @media (max-width: 991.98px) {
   .fp-controlArrow {
-    top: 30%;
+    display: none;
   }
 }
 .fp-prev {
@@ -17276,11 +17272,11 @@ html.fp-enabled,
 }
 
 #fp-nav.fp-right {
-  right: 17px;
+  right: 1rem;
 }
 
 #fp-nav.fp-left {
-  left: 17px;
+  left: 1rem;
 }
 
 .fp-slidesNav {
@@ -17296,15 +17292,18 @@ html.fp-enabled,
 }
 
 .fp-slidesNav.fp-bottom {
-  bottom: 17px;
+  bottom: 1rem;
 }
 
 .fp-slidesNav.fp-top {
-  top: 17px;
+  top: 1rem;
 }
 
 #fp-nav ul,
 .fp-slidesNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -17312,19 +17311,22 @@ html.fp-enabled,
 #fp-nav ul li,
 .fp-slidesNav ul li {
   display: block;
-  width: 14px;
-  height: 13px;
-  margin: 7px;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
   position: relative;
 }
 
 .fp-slidesNav ul li {
   display: inline-block;
+  margin: 0.25rem;
 }
 
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -17337,24 +17339,22 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-  height: 12px;
-  width: 12px;
-  margin: -6px 0 0 -6px;
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
   border-radius: 100%;
 }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   border-radius: 50%;
-  position: absolute;
   z-index: 1;
-  height: 4px;
-  width: 4px;
+  height: 0.5rem;
+  width: 0.5rem;
+  display: flex;
   border: 0;
-  background: #333;
-  left: 50%;
-  top: 50%;
-  margin: -2px 0 0 -2px;
+  background: #FFFFFF;
+  margin: 0;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -17363,9 +17363,9 @@ html.fp-enabled,
 
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
-  width: 10px;
-  height: 10px;
-  margin: -5px 0px 0px -5px;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -17715,6 +17715,12 @@ footer ul.nav li.nav-item a.nav-link {
 }
 
 /* 6. Page-specific styles */
+#fullpage .fp-section[data-anchor=section0] {
+  min-height: calc(100vh - 82px) !important;
+  height: calc(100vh - 82px) !important;
+  padding: 0;
+}
+
 .fp-viewing-section1 #fp-nav ul li a span, .fp-viewing-section1 .fp-slidesNav ul li a span,
 .fp-viewing-section2 #fp-nav ul li a span,
 .fp-viewing-section2 .fp-slidesNav ul li a span,
@@ -17764,10 +17770,14 @@ footer ul.nav li.nav-item a.nav-link {
     text-align: left;
   }
   .slide h1, .slide .h1, .slide img {
-    margin-top: calc(40vh - 82px);
+    margin-top: 8rem;
   }
   .slide hr {
     border-color: #002169;
+  }
+  #slide1, #slide2 {
+    object-fit: cover;
+    background-size: auto calc(50vh - 82px);
   }
 }
 /* Landscape */
