@@ -17188,7 +17188,7 @@ html.fp-enabled,
 
 @media (max-width: 991.98px) {
   .fp-section .fp-overflow {
-    padding: 80px 0;
+    padding: 0 0 4rem 0;
     margin-top: 82px;
   }
 }
@@ -17402,6 +17402,12 @@ html.fp-enabled,
   transition: all 0.2s ease-in-out;
 }
 
+@media (max-width: 991.98px) {
+  #fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff;
+  }
+}
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
   height: 0.5rem;
@@ -17790,27 +17796,26 @@ footer ul.nav li.nav-item a.nav-link {
     color: #fff;
     text-align: left;
   }
-  .slide h1, .slide .h1, .slide img {
-    margin-top: 14rem;
-  }
   .slide hr {
     border-color: #002169;
   }
-  #slide1, #slide2 {
+  .slide .fp-overflow > img {
+    width: 100%;
+    height: 40vh;
     object-fit: cover;
-    background-size: 100% 12rem;
-    background-repeat: no-repeat;
-    background-position: top center;
+    object-position: center;
+  }
+  #slide1, #slide2 {
+    background: none;
     justify-content: flex-start;
-  }
-  #slide1 {
-    background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1Mobile.jpg");
-  }
-  #slide2 {
-    background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2Mobile.jpg");
   }
 }
 /* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 991px) and (orientation: landscape) {
+  .slide .fp-overflow > img {
+    height: 30vh;
+  }
+}
 .home__services__link {
   position: relative;
   display: flex;

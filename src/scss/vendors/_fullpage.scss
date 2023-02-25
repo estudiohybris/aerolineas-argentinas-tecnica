@@ -43,7 +43,7 @@ html.fp-enabled,
 
 @include media-breakpoint-down(lg) {
     .fp-section .fp-overflow {
-        padding: 80px 0;
+        padding: 0 0 $spacer * 4 0;
         margin-top: 82px;
     }
 }
@@ -227,6 +227,13 @@ html.fp-enabled,
     //top: 0;
     margin: 0;
     @include prefixes(transition, $transition-base);
+}
+
+@include media-breakpoint-down(lg) {
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+        background: $white;
+    }
 }
 
 #fp-nav ul li:hover a span,

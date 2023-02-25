@@ -50,39 +50,33 @@
             color: $white;
             text-align: left;
         }
-        h1, img {
-            margin-top: $spacer * 14;
-        }
         hr {
             border-color: $secondary;
         }
+        & .fp-overflow > img {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     #slide1, #slide2 {
-        object-fit: cover;
-        background-size: 100% 12rem;
-        background-repeat: no-repeat;
-        background-position: top center;
+        background: none;
         justify-content: flex-start;
-    }
-
-    #slide1 {
-        background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1Mobile.jpg");
-    }
-    
-    #slide2 {
-        background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2Mobile.jpg");
     }
 }
 
 /* Landscape */
-// @media only screen 
-//   and (min-device-width: 320px) 
-//   and (max-device-width: 991px)
-//   and (orientation: landscape) {
-//     .slide {
-//         background-image: none !important;
-//     }
-// }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 991px)
+  and (orientation: landscape) {
+    .slide {
+        & .fp-overflow > img {
+            height: 30vh;
+        }
+    }
+}
 
 .home__services__link {
     position: relative;
