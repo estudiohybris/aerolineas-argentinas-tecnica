@@ -28096,14 +28096,14 @@ var fullPageInstance = new fullpage_js__WEBPACK_IMPORTED_MODULE_3___default.a('#
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['Inicio', '¿Quienes somos?', 'Servicios', 'Certificaciones', 'Contacto'],
-    showActiveTooltip: true,
+    showActiveTooltip: false,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
     //Scrolling
     css3: true,
     scrollingSpeed: 1000,
-    autoScrolling: true,
-    fitToSection: false,
+    //autoScrolling: true,
+    //fitToSection: false,
     //fitToSectionDelay: 600,
     //scrollBar: false,
     //easing: 'easeInOutCubic',
@@ -28117,17 +28117,17 @@ var fullPageInstance = new fullpage_js__WEBPACK_IMPORTED_MODULE_3___default.a('#
     //interlockedSlides: true,
     dragAndMove: true,
     //offsetSections: false,
-    //resetSliders: false,
-    //fadingEffect: true,
+    resetSliders: false,
+    fadingEffect: true,
     //normalScrollElements: '#element1, .element2',
-    //scrollOverflow: true,
+    scrollOverflow: true,
     //scrollOverflowMacStyle: false,
     //scrollOverflowReset: false,
     //touchSensitivity: 15,
     //bigSectionsDestination: null,
     //Accessibility
-    keyboardScrolling: true,
-    animateAnchor: true,
+    //keyboardScrolling: true,
+    //animateAnchor: true,
     //recordHistory: true,
     //Design
     controlArrows: true,
@@ -28138,10 +28138,10 @@ var fullPageInstance = new fullpage_js__WEBPACK_IMPORTED_MODULE_3___default.a('#
     controlArrowColor: '#0075C9',
     verticalCentered: true,
     sectionsColor: ['#0075C9', '#FFFFFF', '#FFFFFF', '#FFFFFF','#0075C9',],
-    paddingTop: 80,
-    paddingBottom: 80,
+    paddingTop: 138,
+    //paddingBottom: 138,
     responsiveWidth: 991,
-    responsiveHeight: 640,
+    //responsiveHeight: 640,
     //responsiveSlides: true,
     parallax: false,
     dropEffect: false,
@@ -28151,7 +28151,10 @@ var fullPageInstance = new fullpage_js__WEBPACK_IMPORTED_MODULE_3___default.a('#
     lazyLoading: true,
     //observer: true,
     credits: { enabled: false},
-    licenseKey: 'OPEN-SOURCE-GPLV4-LICENSE',
+    licenseKey: '',
+    afterResponsive: function(isResponsive){
+
+    }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 

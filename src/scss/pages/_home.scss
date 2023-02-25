@@ -1,29 +1,22 @@
 @import "../abstracts/abstracts-module";
 
-#fullpage .fp-section[data-anchor="section0"] {
-    min-height: calc(100vh - 82px) !important;
-    height: calc(100vh - 82px) !important;
-    padding: 0;
-}
+// #fullpage .fp-section[data-anchor="section0"] {
+//     min-height: calc(100vh - 82px) !important;
+//     height: calc(100vh - 82px) !important;
+//     padding: 0;
+// }
 
-@include media-breakpoint-down(lg) {
-    #fp-nav ul,
-    .fp-slidesNav ul {
-        flex-direction: row !important;
-    }
-}
-
-.fp-viewing-section1,
-.fp-viewing-section2,
-.fp-viewing-section3 {
-    & #fp-nav ul li a span,
-    & .fp-slidesNav ul li a span {
-        background: $secondary !important;
-    }
-    & #fp-nav ul li .fp-tooltip {
-        color: $secondary;
-    }
-}
+// .fp-viewing-section1,
+// .fp-viewing-section2,
+// .fp-viewing-section3 {
+//     & #fp-nav ul li a span,
+//     & .fp-slidesNav ul li a span {
+//         background: $secondary !important;
+//     }
+//     & #fp-nav ul li .fp-tooltip {
+//         color: $secondary;
+//     }
+// }
 
 .slide {
     background-repeat: no-repeat;
@@ -70,6 +63,14 @@
         background-repeat: no-repeat;
         background-position: top center;
         justify-content: flex-start;
+    }
+
+    #slide1 {
+        background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1Mobile.jpg");
+    }
+    
+    #slide2 {
+        background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2Mobile.jpg");
     }
 }
 
