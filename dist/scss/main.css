@@ -17762,32 +17762,25 @@ footer ul.nav li.nav-item a.nav-link {
 }
 
 @media (max-width: 991.98px) {
-  .slide {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-  }
   .slide h1, .slide .h1, .slide p {
     color: #fff;
     text-align: left;
   }
   .slide h1, .slide .h1, .slide img {
-    margin-top: 8rem;
+    margin-top: 14rem;
   }
   .slide hr {
     border-color: #002169;
   }
   #slide1, #slide2 {
     object-fit: cover;
-    background-size: 100% calc(50vh - 114px);
+    background-size: 100% 12rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    justify-content: flex-start;
   }
 }
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 991px) and (orientation: landscape) {
-  .slide {
-    background-image: none !important;
-  }
-}
 .home__services__link {
   position: relative;
   display: flex;

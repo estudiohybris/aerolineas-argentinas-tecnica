@@ -53,15 +53,12 @@
 
 @include media-breakpoint-down(lg) {
     .slide {
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: contain;
         h1, p {
             color: $white;
             text-align: left;
         }
         h1, img {
-            margin-top: $spacer * 8;
+            margin-top: $spacer * 14;
         }
         hr {
             border-color: $secondary;
@@ -69,19 +66,22 @@
     }
     #slide1, #slide2 {
         object-fit: cover;
-        background-size: 100% calc(50vh - 114px);
+        background-size: 100% 12rem;
+        background-repeat: no-repeat;
+        background-position: top center;
+        justify-content: flex-start;
     }
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 991px)
-  and (orientation: landscape) {
-    .slide {
-        background-image: none !important;
-    }
-}
+// @media only screen 
+//   and (min-device-width: 320px) 
+//   and (max-device-width: 991px)
+//   and (orientation: landscape) {
+//     .slide {
+//         background-image: none !important;
+//     }
+// }
 
 .home__services__link {
     position: relative;
