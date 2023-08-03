@@ -7,100 +7,109 @@ block html_title
 block content
 
     +section__header
-
-    .fullpage-wrapper(id="fullpage")
     
-        section.section(data-anchor="section0")
-            .slide.active(id="slide1", data-anchor="slide1")
-                img.d-flex.d-lg-none.mb-2(src=`${hostname}/assets/images/homeHead1Mobile.jpg`, alt="Nuestro taller de motores")
-                .container-lg
-                    .row
-                        .col-12.offset-lg-7.col-lg-4.offset-xl-8
-                            h1 Nuestro taller de motores
-                            hr
-                            p.mb-0 Contamos con 20 talleres de mantenimiento de componentes en ambas bases de operación con capacidad para el testeo, reparación y overhaul en más de 8900 P/Ns.
-            .slide(id="slide2", data-anchor="slide2")
-                img.d-flex.d-lg-none.mb-2(src=`${hostname}/assets/images/homeHead2Mobile.jpg`, alt="MRO Latinoamérica 2023")
-                .container-lg
-                    .row
-                        .col-12.offset-lg-7.col-lg-4.offset-xl-8
-                            img.d-flex.ms-0.ms-lg-auto(src=`${hostname}/assets/images/logo_MRO.png`, alt="MRO Latinoamérica 2023", height="80")
-                            hr
-                            p.mb-0 Como parte del plan estratégico para el desarrollo de nuestra organización de mantenimiento e ingeniería, Aerolíneas Argentinas Técnica participará como Host Sponsor del MRO Latinoamérica 2023.
+    section
 
-        section.section(data-anchor="section1")
-            .container-lg
-                .row
-                    .col-12
-                        h2.d-inline-flex ¿Quiénes somos?
-                        p.mb-4 Somos un 
-                            b centro de mantenimiento con mas de 70 años en la industria, 
-                            | con el objetivo de consolidarnos como líder en servicios aeronáuticos de Latinoamérica. Contamos con 
-                            b 2300 profesionales de gran experiencia, 
-                            | ofreciendo nuestros servicios a la flota del Grupo Aerolíneas y la industria aérea bajo los mayores estándares de seguridad, con una gestión integra, transparente, eficiente y sustentable.
-                .row
-                    .col-12.col-sm-4.text-center
-                        img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeEscalasInternacionales.png`, alt="Escalas internacionales")
-                        p.font-size-lg.mb-0
-                            b 6
-                        p.text-primary.mb-2.mb-lg-0 Escalas internacionales
-                    .col-12.col-sm-4.text-center
-                        img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeHangares.png`, alt="Hangares")
-                        p.font-size-lg.mb-0
-                            b 8
-                        p.text-primary.mb-2.mb-lg-0 Hangares
-                    .col-12.col-sm-4.text-center
-                        img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeProfesionales.png`, alt="Profesionales")
-                        p.font-size-lg.mb-0
-                            b 2300
-                        p.text-primary.mb-0 Profesionales
-
-        section.section(data-anchor="section2")
-            .container-lg
-                .row
-                    .col-12
-                        h2.d-inline-flex Servicios
-                .row.home__services
-                    .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
-                        a.home__services__link(href=`${hostname}/app/servicios/aeronaves.html`) 
-                            img(src=`${hostname}/assets/images/homeAeronaves.png`, alt="Aeronaves")
-                            h4 Aeronaves
-                    .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
-                        a.home__services__link(href=`${hostname}/app/servicios/motores.html`) 
-                            img(src=`${hostname}/assets/images/homeMotores.png`, alt="Motores")
-                            h4 Motores
-                    .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
-                        a.home__services__link(href=`${hostname}/app/servicios/capacitacion-tecnica.html`)
-                            img(src=`${hostname}/assets/images/homeCapacitacionTecnica.png`, alt="Capacitación Técnica")
-                            h4 Capacitación Técnica
-                    .col-11.col-sm-8.col-lg-4
-                        a.home__services__link(href=`${hostname}/app/servicios/componentes.html`) 
-                            img(src=`${hostname}/assets/images/homeComponentes.png`, alt="Componentes")
-                            h4 Componentes
-                    .col-11.col-sm-8.col-lg-4
-                        a.home__services__link(href=`${hostname}/app/servicios/aeronavegabilidad-continuada.html`)
-                            img(src=`${hostname}/assets/images/homeAeronavegabilidadContinuada.png`, alt="Aeronavegabilidad Continuada")
-                            h4 Aeronavegabilidad Continuada
-
-        section.section(data-anchor="section3")
-            .container-lg
-                .row
-                    .col-12
-                        h2.d-inline-flex Certificaciones
-                    .col-12.col-sm-4.home__certifications.mb-3.mb-lg-0
-                        h3 FAA
-                        img(src=`${hostname}/assets/images/homeFAA-baja.png`, alt="FAA")
+        #carouselExampleCaptions.carousel.slide
+            .carousel-indicators
+                button.active(type="button", data-bs-target="#carouselExampleCaptions", data-bs-slide-to="0", aria-current="true", aria-label="Slide 1")
+                button(type="button", data-bs-target="#carouselExampleCaptions", data-bs-slide-to="1", aria-label="Slide 2")
+            .carousel-inner
+                #slide1.carousel-item.active
+                    img.d-none.d-lg-block.w-100(src=`${hostname}/assets/images/homeHead1.jpg`, alt="Nuestro taller de motores")
+                    img.d-block.d-lg-none.w-100(src=`${hostname}/assets/images/homeHead1Mobile.jpg`, alt="Nuestro taller de motores")
+                    .carousel-caption
+                        h1 Nuestro taller de motores
                         hr
-                        p FAR Part 145 Foreign Certificated Repair Station (AISY117C)
-                    .col-12.col-sm-4.home__certifications.mb-3.mb-lg-0
-                        h3 ANAC
-                        img(src=`${hostname}/assets/images/homeANAC-baja.png`, alt="ANAC")
+                        p.mb-0 Contamos con 20 talleres de mantenimiento de componentes en ambas bases de operación con capacidad para el testeo, reparación y overhaul en más de 8900 P/Ns.
+                #slide2.carousel-item
+                    img.d-none.d-lg-block.w-100(src=`${hostname}/assets/images/homeHead2.jpg`, alt="MRO Latinoamérica 2023")
+                    img.d-block.d-lg-none.w-100(src=`${hostname}/assets/images/homeHead2Mobile.jpg`, alt="MRO Latinoamérica 2023")
+                    .carousel-caption
+                        img.d-flex.ms-0.ms-lg-auto(src=`${hostname}/assets/images/logo_MRO.png`, alt="MRO Latinoamérica 2023", height="80")
                         hr
-                        p RAAC Part 145 Certificated Aeronautical Workshop (1B-114)
-                    .col-12.col-sm-4.home__certifications
-                        h3 DIGAMC
-                        img(src=`${hostname}/assets/images/homeDIGAMC-baja.png`, alt="DIGAMC")
-                        hr
-                        p Recognition Certificate for Defense Maintenance Organization under Military Regulation
+                        p.mb-0 Como parte del plan estratégico para el desarrollo de nuestra organización de mantenimiento e ingeniería, Aerolíneas Argentinas Técnica participará como Host Sponsor del MRO Latinoamérica 2023.
 
-        +section__footer
+            button.carousel-control-prev(type="button", data-bs-target="#carouselExampleCaptions", data-bs-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.visually-hidden Previous
+            button.carousel-control-next(type="button", data-bs-target="#carouselExampleCaptions", data-bs-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.visually-hidden Next
+
+    section(id="section1")
+        .container-lg
+            .row
+                .col-12
+                    h2.d-inline-flex ¿Quiénes somos?
+                    p.mb-4 Somos un 
+                        b centro de mantenimiento con mas de 70 años en la industria, 
+                        | con el objetivo de consolidarnos como líder en servicios aeronáuticos de Latinoamérica. Contamos con 
+                        b 2300 profesionales de gran experiencia, 
+                        | ofreciendo nuestros servicios a la flota del Grupo Aerolíneas y la industria aérea bajo los mayores estándares de seguridad, con una gestión integra, transparente, eficiente y sustentable.
+            .row
+                .col-12.col-sm-4.text-center
+                    img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeEscalasInternacionales.png`, alt="Escalas internacionales")
+                    p.font-size-lg.mb-0
+                        b 6
+                    p.text-primary.mb-2.mb-lg-0 Escalas internacionales
+                .col-12.col-sm-4.text-center
+                    img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeHangares.png`, alt="Hangares")
+                    p.font-size-lg.mb-0
+                        b 8
+                    p.text-primary.mb-2.mb-lg-0 Hangares
+                .col-12.col-sm-4.text-center
+                    img.img-fluid.me-auto.ms-auto(src=`${hostname}/assets/images/homeProfesionales.png`, alt="Profesionales")
+                    p.font-size-lg.mb-0
+                        b 2300
+                    p.text-primary.mb-0 Profesionales
+
+    section(id="section2")
+        .container-lg
+            .row
+                .col-12
+                    h2.d-inline-flex Servicios
+            .row.home__services
+                .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
+                    a.home__services__link(href=`${hostname}/app/servicios/aeronaves.html`) 
+                        img(src=`${hostname}/assets/images/homeAeronaves.png`, alt="Aeronaves")
+                        h4 Aeronaves
+                .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
+                    a.home__services__link(href=`${hostname}/app/servicios/motores.html`) 
+                        img(src=`${hostname}/assets/images/homeMotores.png`, alt="Motores")
+                        h4 Motores
+                .col-11.col-sm-8.col-lg-4.mb-0.mb-lg-2
+                    a.home__services__link(href=`${hostname}/app/servicios/capacitacion-tecnica.html`)
+                        img(src=`${hostname}/assets/images/homeCapacitacionTecnica.png`, alt="Capacitación Técnica")
+                        h4 Capacitación Técnica
+                .col-11.col-sm-8.col-lg-4
+                    a.home__services__link(href=`${hostname}/app/servicios/componentes.html`) 
+                        img(src=`${hostname}/assets/images/homeComponentes.png`, alt="Componentes")
+                        h4 Componentes
+                .col-11.col-sm-8.col-lg-4
+                    a.home__services__link(href=`${hostname}/app/servicios/aeronavegabilidad-continuada.html`)
+                        img(src=`${hostname}/assets/images/homeAeronavegabilidadContinuada.png`, alt="Aeronavegabilidad Continuada")
+                        h4 Aeronavegabilidad Continuada
+
+    section(id="section3")
+        .container-lg
+            .row
+                .col-12
+                    h2.d-inline-flex Certificaciones
+                .col-12.col-sm-4.home__certifications.mb-3.mb-lg-0
+                    h3 FAA
+                    img(src=`${hostname}/assets/images/homeFAA-baja.png`, alt="FAA")
+                    hr
+                    p FAR Part 145 Foreign Certificated Repair Station (AISY117C)
+                .col-12.col-sm-4.home__certifications.mb-3.mb-lg-0
+                    h3 ANAC
+                    img(src=`${hostname}/assets/images/homeANAC-baja.png`, alt="ANAC")
+                    hr
+                    p RAAC Part 145 Certificated Aeronautical Workshop (1B-114)
+                .col-12.col-sm-4.home__certifications
+                    h3 DIGAMC
+                    img(src=`${hostname}/assets/images/homeDIGAMC-baja.png`, alt="DIGAMC")
+                    hr
+                    p Recognition Certificate for Defense Maintenance Organization under Military Regulation
+
+    +section__footer

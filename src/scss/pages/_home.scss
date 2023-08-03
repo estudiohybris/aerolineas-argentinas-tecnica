@@ -1,27 +1,19 @@
 @import "../abstracts/abstracts-module";
 
-// #fullpage .fp-section[data-anchor="section0"] {
-//     min-height: calc(100vh - 82px) !important;
-//     height: calc(100vh - 82px) !important;
-//     padding: 0;
-// }
-
-// .fp-viewing-section1,
-// .fp-viewing-section2,
-// .fp-viewing-section3 {
-//     & #fp-nav ul li a span,
-//     & .fp-slidesNav ul li a span {
-//         background: $secondary !important;
-//     }
-//     & #fp-nav ul li .fp-tooltip {
-//         color: $secondary;
-//     }
-// }
-
 .slide {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    .carousel-item {
+        & > img {
+            aspect-ratio: 5/2;
+        }
+        .carousel-caption {
+            width: 30%;
+            right: 15%;
+            bottom: 30%;
+            left: initial;
+            top: initial;
+        }
+    }
     h1, p {
         text-align: right;
     }
@@ -33,37 +25,58 @@
 }
 
 #slide1 {
-    background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1.jpg");
     h1, p {
         color: $white;
+    }
+    p {
+        padding-bottom: 1.5rem;
     }
 }
 
 #slide2 {
-    background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2.jpg");
+    h1, p {
+        color: $secondary;
+    }
 }
 
 
 @include media-breakpoint-down(lg) {
     .slide {
+        .carousel-item {
+            & > img {
+                aspect-ratio: 3/2;
+            }
+            .carousel-caption {
+                background-color: $primary;
+                padding: 14vh 1rem;
+                width: 100%;
+                position: relative;
+                right: initial;
+                bottom: initial;
+                left: initial;
+                top: initial;
+            }
+        }
         h1, p {
-            color: $white;
-            text-align: left;
+            color: $white !important;
+            text-align: left !important;
         }
         hr {
-            border-color: $secondary;
-        }
-        & .fp-overflow > img {
-            width: 100%;
-            height: 40vh;
-            object-fit: cover;
-            object-position: center;
+            border-color: $secondary !important;
         }
     }
-    #slide1, #slide2 {
-        background: none;
-        justify-content: flex-start;
-    }
+
+}
+
+@include media-breakpoint-up(xl) {
+    .slide {
+
+        .carousel-item {
+            .carousel-caption {
+                width: 20%;
+            }
+        }
+    } 
 }
 
 /* Landscape */
@@ -76,6 +89,15 @@
             height: 30vh;
         }
     }
+}
+
+section[id^="section"] {
+    padding-top: 10rem;
+    min-height: calc(100vh - 20rem);
+}
+
+#section3 {
+    padding-bottom: 10rem;
 }
 
 .home__services__link {

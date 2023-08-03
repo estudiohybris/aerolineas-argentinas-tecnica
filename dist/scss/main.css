@@ -17664,7 +17664,6 @@ strong {
 /* 4. Layout-related sections */
 header.sticky-top {
   background-color: #fff;
-  box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.08);
 }
 
 .navbar .navbar-toggler {
@@ -17766,10 +17765,15 @@ footer ul.nav li.nav-item a.nav-link {
 }
 
 /* 6. Page-specific styles */
-.slide {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.slide .carousel-item > img {
+  aspect-ratio: 5/2;
+}
+.slide .carousel-item .carousel-caption {
+  width: 30%;
+  right: 15%;
+  bottom: 30%;
+  left: initial;
+  top: initial;
 }
 .slide h1, .slide .h1, .slide p {
   text-align: right;
@@ -17780,34 +17784,42 @@ footer ul.nav li.nav-item a.nav-link {
   margin-bottom: 3rem;
 }
 
-#slide1 {
-  background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead1.jpg");
-}
 #slide1 h1, #slide1 .h1, #slide1 p {
   color: #fff;
 }
+#slide1 p {
+  padding-bottom: 1.5rem;
+}
 
-#slide2 {
-  background-image: url("https://estudiohybris.github.io/aerolineas-argentinas-tecnica/dist/assets/images/homeHead2.jpg");
+#slide2 h1, #slide2 .h1, #slide2 p {
+  color: #002169;
 }
 
 @media (max-width: 991.98px) {
+  .slide .carousel-item > img {
+    aspect-ratio: 3/2;
+  }
+  .slide .carousel-item .carousel-caption {
+    background-color: #0075C9;
+    padding: 14vh 1rem;
+    width: 100%;
+    position: relative;
+    right: initial;
+    bottom: initial;
+    left: initial;
+    top: initial;
+  }
   .slide h1, .slide .h1, .slide p {
-    color: #fff;
-    text-align: left;
+    color: #fff !important;
+    text-align: left !important;
   }
   .slide hr {
-    border-color: #002169;
+    border-color: #002169 !important;
   }
-  .slide .fp-overflow > img {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    object-position: center;
-  }
-  #slide1, #slide2 {
-    background: none;
-    justify-content: flex-start;
+}
+@media (min-width: 1248px) {
+  .slide .carousel-item .carousel-caption {
+    width: 20%;
   }
 }
 /* Landscape */
@@ -17816,6 +17828,15 @@ footer ul.nav li.nav-item a.nav-link {
     height: 30vh;
   }
 }
+section[id^=section] {
+  padding-top: 10rem;
+  min-height: calc(100vh - 20rem);
+}
+
+#section3 {
+  padding-bottom: 10rem;
+}
+
 .home__services__link {
   position: relative;
   display: flex;
